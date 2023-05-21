@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/top_cornor"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="Choose Videos From"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/tvClose"
+            android:background="@drawable/iv_close"
+            android:backgroundTint="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lout_Gallery"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivGallery"
+                android:background="@drawable/folder_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <TextView
+                android:fontFamily="@font/gotham_semi_bold"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery"/>
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/ivGallery"-->
+            <!--            android:background="@drawable/gallery_icon"-->
+            <!--            android:layout_width="@dimen/_20sdp"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:layout_marginStart="@dimen/_20sdp"-->
+            <!--            android:layout_height="@dimen/_20sdp"/>-->
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lout_Folder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivFolder"
+                android:background="@drawable/gallery_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <TextView
+                android:fontFamily="@font/gotham_semi_bold"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Folder"/>
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/ivGallery"-->
+            <!--            android:background="@drawable/gallery_icon"-->
+            <!--            android:layout_width="@dimen/_20sdp"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:layout_marginStart="@dimen/_20sdp"-->
+            <!--            android:layout_height="@dimen/_20sdp"/>-->
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

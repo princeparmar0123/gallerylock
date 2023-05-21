@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/first">
+        <item
+            android:id="@+id/menu_newtab"
+            android:title="New Tab" />
+
+        <item
+            android:id="@+id/menu_bookmark"
+            android:title="Bookmarks" />
+        <item
+            android:id="@+id/menu_history"
+            android:title="History" />
+    </group>
+</menu>

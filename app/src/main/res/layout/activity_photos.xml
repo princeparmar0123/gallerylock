@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:textAlignment="center"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:id="@+id/photo_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_toolbar"
+            app:navigationIcon="@drawable/icn_back1" />
+
+    <RelativeLayout
+        android:background="@color/black"
+        android:layout_below="@+id/photo_toolbar"
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adContainer">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photo_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingLeft="@dimen/_1sdp"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingRight="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_80sdp"
+            tools:listitem="@layout/item_photo"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/no_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/_37sdp"
+                android:layout_marginRight="@dimen/_37sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nofound" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/floating_btn_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_shape_blue"
+            android:backgroundTint="@color/color_blue"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/ic_plus_24dp"
+                app:tint="@color/White" />
+
+            <!--<com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="auto"
+                app:fab_icon="@drawable/iv_camera"
+                app:fab_title="Camera"
+                fab:fab_colorNormal="@color/theme_color"
+                fab:fab_colorPressed="@color/theme_color" />-->
+
+<!--            <com.master.valultcalculator.floatingbutton.FloatingActionButton-->
+<!--                android:id="@+id/fab_gallery"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:fabSize="normal"-->
+<!--                app:fab_colorNormal="@color/colorAccent"-->
+<!--                app:fab_colorPressed="@color/colorAccent"-->
+<!--                app:fab_icon="@drawable/iv_image"-->
+<!--                app:fab_title="Images" />-->
+
+<!--            <com.master.valultcalculator.floatingbutton.FloatingActionButton-->
+<!--                android:id="@+id/fab_folder"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:fabSize="normal"-->
+<!--                app:fab_colorNormal="@color/colorAccent"-->
+<!--                app:fab_colorPressed="@color/colorAccent"-->
+<!--                app:fab_icon="@drawable/iv_folder"-->
+<!--                app:fab_title="Add from folder" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/photo_btn_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/photo_unhide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="@color/colorAccent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/iv_unhide"
+                    app:tint="@color/White" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/photo_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/circle_bg"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/recycle_bin_2x" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/adContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+    <View
+        android:id="@+id/bg_l"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/color_background_layout"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:text="0/0"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/permissionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/permissionBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:gravity="center"
+        android:text="Please allow access of below permission to use this feature"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/permissionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adContainer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_90sdp"
+        android:background="@drawable/allow_back"
+        android:text="Access Pictures"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone" />
+
+    </RelativeLayout>
+
+</layout>

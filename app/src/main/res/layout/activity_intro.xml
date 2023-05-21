@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingStart="@dimen/_25sdp"
+    android:paddingEnd="@dimen/_25sdp"
+    tools:context=".IntroActivity">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottomText"
+        android:orientation="vertical">
+
+        <ImageView
+            android:padding="@dimen/_18sdp"
+            android:src="@drawable/intro_icon"
+            android:background="@drawable/white_back"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+        <TextView
+            android:fontFamily="@font/gotham_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="Welcome to Gallery Lock"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:fontFamily="@font/gotham_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="Hide Photo, Video &amp; Documents \n Behind the Secret Calculator."
+            android:textColor="#A5A5A5"
+            android:textSize="@dimen/_14sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/imgIntruder"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/introdur_alert"/>
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/imgIntruder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intruder Alert"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#E92A4C"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cache the intruder trying to\nbreak through your privacy."
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/imgFolder"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/lock_folder"/>
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/imgFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lock Folders"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#65B5FF"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get extra securityfor your\nalbums."
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:text="@string/agree_amp_continue"
+            android:id="@+id/imgAcceptContinue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/accept_continue"
+            android:layout_marginTop="@dimen/_45sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/by_using_this_application_you_accept_the"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Privacy Policy"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#008DDC"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</layout>

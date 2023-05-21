@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_1sdp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imaegs"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dip"
+            app:riv_mutate_background="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/selected"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/_6sdp"
+            android:src="@drawable/iv_verified"
+            android:padding="@dimen/_2sdp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:id="@+id/floating_btn_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_shape_blue"
+            android:backgroundTint="@color/black"
+           >
+
+            <ImageView
+                android:padding="@dimen/_2sdp"
+                android:id="@+id/playicon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:src="@drawable/play_icn"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@drawable/duration_back"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:text="02:10"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_10sdp" />
+    </FrameLayout>
+
+</layout>
+

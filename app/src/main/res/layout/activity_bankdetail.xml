@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/icn_back1"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/color_toolbar"/>
+
+    <LinearLayout
+        android:padding="@dimen/_13sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/edit_text"
+        android:gravity="center_vertical"
+        android:backgroundTint="@color/color_background_layout"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/bank_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_weight="1"
+            android:text="Bank Title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/bank_copy"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/iv_copy"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/edit_text"
+        android:backgroundTint="@color/color_background_layout"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Website:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/bank_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_weight="1"
+            android:text="Bank website"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/bank_link"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/iv_link"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

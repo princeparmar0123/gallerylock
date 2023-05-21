@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">Calculator Vault</string>
+
+
+    <string name="no_internet">No Internet Connected</string>
+    <string name="msg_no_internet">No Internet connection found. Check your connection try again.</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="time_out">Response time out</string>
+    <string name="alert">Alert</string>
+    <string name="ok">OK</string>
+
+    <string name="storage_msg">To use Calculator Vault,Please allow the app to access photo, media and files.</string>
+    <string name="how_it_work">Type your Password 4 digit into\n calculator and  &amp; press \'=\' to \n confirm.</string>
+    <string name="intruder">Intruder Selfie will take a Photo when unlocking failed.</string>
+    <string name="email">playstore.contactus@gmail.com</string>
+
+    <!--    <string name="privacy_policy">https://vclip5659.blogspot.com/2019/12/privacy-policy-we-collects-information.html</string>-->
+    <string name="privacy_policy">https://www.privacypolicycenter.com/view.php?v=VEFZSWpkYjF!Y09GYkhxMkNDOHlpZz09&amp;n=Calculator-Vault-:-Hide-Photo,-Video</string>
+    <string name="more_app">KD inc.</string>
+
+    <string name="source_google_drive">Google Drive</string>
+    <string name="start_drive">Start Google Drive</string>
+    <string name="login">Log In</string>
+    <string name="logout">Log Out</string>
+    <string name="status_logged_out">Logged Out</string>
+    <string name="status_logged_in">Logged In</string>
+    <string name="status_user_cancelled">User Cancelled</string>
+    <string name="status_error">We found a problem: %1$s</string>
+    <string name="not_open_file">Could not open file</string>
+
+    <string name="google_drive_text">Link Cloud this app and all hide Photo and Video to Backup our Cloud Account</string>
+
+
+    <string name="drive1">Files some time missed?\nTo Hide Video &amp; Photo to Backup Cloud and Solve Problem.</string>
+    <string name="drive2">This Hide Video &amp; Photo Backup to Privately to Store and not Any other to find it! </string>
+
+    <string name="menu_share_link">Share link</string>
+
+    <string name="toast_load_error">Can\'t load this URL</string>
+
+    <string name="sp_ad_block">SP_AD_BLOCK_9</string>
+    <string name="sp_cookies">SP_COOKIES_9</string>
+    <string name="sp_images">SP_IMAGES_9</string>
+    <string name="sp_javascript">SP_JAVASCRIPT_9</string>
+    <string name="sp_savedata">SP_SAVE_DATA_9</string>
+    <string name="sp_location">SP_LOCATION_9</string>
+    <string name="sp_search_engine">SP_SEARCH_ENGINE_9</string>
+    <string name="sp_search_engine_custom">SP_SEARCH_ENGINE_CUSTOM_9</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="empty_view_text">No tabs available</string>
+    <string name="toggle_tab_switcher_menu_item">Toggle switcher</string>
+    <string name="add_tab_menu_item">New tab</string>
+    <string name="clear_tabs_menu_item">Clear all tabs</string>
+    <string name="tab_title">Private Search</string>
+    <string name="remove_tab_menu_item">Remove tab</string>
+    <string name="removed_tab_snackbar">Removed %1$s</string>
+    <string name="cleared_tabs_snackbar">Removed all tabs</string>
+    <string name="undo">Undo</string>
+
+    <string name="setting">Settings</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate Us</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="more">More Apps</string>
+    <string name="contact">Contact Us</string>
+    <string name="about">About Us</string>
+    <string name="more_dec">This App Related apps</string>
+    <string name="contact_dec">Contact to Developer</string>
+    <string name="about_dec">About this Application</string>
+
+
+    <string name="no_image">No Hide Images</string>
+    <string name="no_video">No Hide Videos</string>
+    <string name="no_photo_folder">Photos not this device</string>
+    <string name="no_video_folder">Videos not this device</string>
+    <string name="no_search">Not any search History</string>
+    <string name="no_bookmark">Not set any Bookmark</string>
+    <string name="no_history">Not save History</string>
+    <string name="no_contact">Not save Contacts</string>
+    <string name="no_note">Not save notes</string>
+    <string name="no_intruder">No Intruder Selfie</string>
+    <string name="no_recycler">No Deleted Images and Videos</string>
+    <string name="no_card">Not save card details</string>
+    <string name="no_bank">Not save bank details</string>
+    <string name="no_social">Not save social details</string>
+    <string name="no_email">Not save eamils</string>
+    <string name="no_other">Not save other details</string>
+
+    <string name="error_of_rating">Please click on 5 Star to give us rating on playstore.</string>
+    <string name="no_email_installed">There are no email clients installed.</string>
+    <string name="exit">Exit</string>
+    <string name="description_of_exit">Are you sure you want to exit?</string>
+
+
+    <string name="thanks">Thanks for leaving a nice review, it helps us a lot</string>
+    <string name="send_email_view">Send email via...</string>
+
+    <!--   Orignal  id-->
+    <string name="interstitial_id">ca-app-pub-1759497372215819/1501962041</string>
+    <string name="banner_id">ca-app-pub-1759497372215819/6754288720</string>
+    <string name="native_id">ca-app-pub-1759497372215819/1310390357</string>
+    <string name="admob_app_id">ca-app-pub-1759497372215819~5749502274</string>
+    <string name="app_open_id">ca-app-pub-1759497372215819/8997308684</string>
+
+    <!--    Test id-->
+    <string name="app_unit_id">ca-app-pub-9895767199502122~2921408047</string>
+    <string name="admob_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_native">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_open">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="admob_reward">ca-app-pub-3940256099942544/5224354917</string>
+
+    <!--    test id-->
+    <!--        <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--        <string name="banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--        <string name="interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--        <string name="native_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--        <string name="app_open_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+
+
+    <string name="test_ad">Test Ad</string>
+    <string name="maximum_flow_rate_2250gph">Maximum flow rate: 2250GPH</string>
+
+    <string name="song_joy">SONG JOY</string>
+    <string name="install">INSTALL</string>
+
+    <!--    Test id-->
+    <!--    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="native_id">ca-app-pub-3940256099942544/2247696110</string>-->
+
+    <!-- <string name="app_open_id">ca-app-pub-3940256099942544/3419835294</string> -->
+
+    <!-- FileUtils -->
+    <string name="two_dot">:</string>
+    <string name="primary">primary</string>
+    <string name="pathSeparator">/</string>
+    <string name="storage">storage</string>
+    <string name="download">/Download/</string>
+    <string name="defaultTheme">DefaultTheme</string>
+
+    <string name="pictures_folder_permission_btn">Access Pictures</string>
+    <string name="videos_folder_permission_btn">Access Videos</string>
+    <string name="hidden_folder_permission_btn">Access Hidden Folder</string>
+
+    <!--    android 11 permission dialog-->
+    <string name="move_desc1">For store intruder images we need access of hidden folder.</string>
+    <string name="move_desc2">Would like you allow to this process..?</string>
+
+    <string name="create_folder_desc">To hide media files we have to access the picture directory</string>
+
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="onedsignal_id">2b91be27-88e3-48db-9b26-52ebe57d6a97</string>
+
+
+    <!--    exit dialog-->
+    <string name="exit_string"><font color='#000000'>Exit</font></string>
+    <string name="exit_warning"><font color='#000000'>Are you sure you want to exit?</font></string>
+    <string name="exit_cancel"><font color='#000000'>Cancel</font></string>
+    <string name="exit_yes"><font color='#000000'>Yes</font></string>
+
+    <string name="month_picker">Month Picker</string>
+    <string name="cancel">CANCEL</string>
+
+    <!-- ad -->
+    <string name="ad_showing">Ad Showing...</string>
+    <string name="qura_1">Qureka is India’s Top Live Trivia Game Show</string>
+    <string name="qura_2">Refer Qureka to your friends &amp; play all quizzes along with your friends</string>
+    <string name="Play">Play</string>
+    <string name="Ad">Ad</string>
+    <string name="Test_Ad">Test Ad</string>
+    <string name="Test_Ad_2">Maximum flow rate: 2250GPH</string>
+    <string name="INSTALL">INSTALL</string>
+    <string name="Exit">Exit</string>
+    <string name="Install">Install</string>
+    <string name="ad">Ad</string>
+    <string name="send_email">dreamapps80@gmail.com</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Calculator Lock</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="by_using_this_application_you_accept_the">By using this application, you accept the</string>
+    <string name="agree_amp_continue"><![CDATA[Agree & Continue]]></string>
+
+
+</resources>

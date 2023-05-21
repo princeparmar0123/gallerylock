@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/cal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="210" />
+
+        <include
+            android:id="@+id/cal"
+            layout="@layout/content_calculator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/space"
+            app:layout_constraintVertical_weight="406" />
+
+        <EditText
+            android:id="@+id/input_text"
+            style="@style/DisplayEditTextStyle.Formula"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_semi_bold"
+            android:gravity="right|center_vertical|center_horizontal|center|end"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/White"
+            app:layout_constraintBottom_toTopOf="@+id/output_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <EditText
+            android:id="@+id/output_text"
+            style="@style/DisplayEditTextStyle.Result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:focusable="false"
+            android:fontFamily="@font/gotham_semi_bold"
+            android:gravity="right|center_vertical|center_horizontal|center|end"
+            android:inputType="none"
+            android:textColor="@color/White"
+            app:layout_constraintBottom_toBottomOf="@+id/space"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/reset"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/iv_forgot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#515A73" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
+

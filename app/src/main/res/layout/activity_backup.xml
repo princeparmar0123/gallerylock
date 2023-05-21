@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@drawable/icn_back1" />
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adContainer"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/iv_verified" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Sync Completed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <!--<ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:src="@drawable/iv_verified" />-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/color_background_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <!--<ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/iv_sync"
+                android:tint="@color/theme_color" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:text="Sync On/Off"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/sync_all"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_22sdp"
+                app:sb_checked_color="@color/color_main"
+                app:sb_show_indicator="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/color_background_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <!--<ImageView
+                android:id="@+id/wifi"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/iv_wifi_off"
+                android:tint="@color/theme_color" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:text="Cloud Sync Only WIFI"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/sync_wifi"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_22sdp"
+                app:sb_checked_color="@color/color_main"
+                app:sb_show_indicator="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/drivefolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/color_background_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <!--<ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/iv_drive_folder"
+                android:tint="@color/theme_color" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:text="Drive Folder"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/iv_right_arrow"
+                app:tint="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/allow_back"
+            android:text="Sign Out"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_12sdp" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <de.hdodenhof.circleimageview.CircleImageView
+                 android:id="@+id/user_profile"
+                 android:layout_width="@dimen/_40sdp"
+                 android:layout_height="@dimen/_40sdp"
+                 android:layout_margin="@dimen/_10sdp"
+                 android:src="@drawable/profile_black" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginLeft="@dimen/_6sdp"
+                 android:gravity="center_vertical"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/user_name"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Name:"
+                     android:textColor="@color/Black"
+                     android:textSize="@dimen/_14sdp" />
+
+                 <TextView
+                     android:id="@+id/user_email"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="@dimen/_6sdp"
+                     android:text="Email:"
+                     android:textColor="@color/Black"
+                     android:textSize="@dimen/_14sdp" />
+
+             </LinearLayout>
+         </LinearLayout>-->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/adContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

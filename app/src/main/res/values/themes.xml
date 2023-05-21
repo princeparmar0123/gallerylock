@@ -1,0 +1,264 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ValultCalculator" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_main</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+
+
+        <!--        <item name="colorControlNormal">@color/colorWhiteOp60</item>-->
+        <!--        <item name="colorControlActivated">@color/colorWhiteOp60</item>-->
+        <!--        <item name="colorControlHighlight">@color/colorWhiteOp60</item>-->
+        <!--        <item name="android:textAlignment">gravity</item>-->
+        <!--        <item name="android:textDirection">locale</item>-->
+        <item name="android:fontFamily">@font/gotham_regular</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
+        <item name="android:spinnerItemStyle">@style/mySpinnerItemSelectedStyle</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="mySpinnerItemSelectedStyle" parent="@android:style/Widget.Holo.TextView.SpinnerItem">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:popupBackground">@color/color_background_layout</item>
+    </style>
+
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/allow_back</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/colorAccent
+        </item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:paddingTop">@dimen/_4sdp</item>
+        <item name="android:paddingBottom">@dimen/_4sdp</item>
+        <item name="android:paddingRight">@dimen/_10sdp</item>
+        <item name="android:paddingLeft">@dimen/_10sdp</item>
+    </style>
+
+    <style name="Spinner" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gotham_regular</item>
+        <item name="android:color">@color/color_background_layout</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppToolbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="AlertDialogCustom1" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/black</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:src">@drawable/iv_sort</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+        <item name="android:contentDescription">"Lala"</item>
+    </style>
+
+    <style name="calculator_button">
+        <item name="android:textSize">@dimen/_30sdp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/circle_shape</item>
+        <item name="android:layout_marginLeft">@dimen/_4sdp</item>
+        <item name="android:layout_marginRight">@dimen/_4sdp</item>
+        <item name="android:layout_marginTop">@dimen/_4sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_4sdp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="calculator_button_black">
+        <item name="android:textSize">@dimen/_30sdp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/calculator_button_0</item>
+        <item name="android:layout_marginLeft">@dimen/_4sdp</item>
+        <item name="android:layout_marginRight">@dimen/_4sdp</item>
+        <item name="android:layout_marginTop">@dimen/_4sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_4sdp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="calculator_button_gray">
+        <item name="android:textSize">@dimen/_30sdp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/circle_shape_gray</item>
+        <item name="android:layout_marginLeft">@dimen/_4sdp</item>
+        <item name="android:layout_marginRight">@dimen/_4sdp</item>
+        <item name="android:layout_marginTop">@dimen/_4sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_4sdp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="calculator_button_blue">
+        <item name="android:textSize">@dimen/_30sdp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/circle_shape_blue</item>
+        <item name="android:layout_marginLeft">@dimen/_4sdp</item>
+        <item name="android:layout_marginRight">@dimen/_4sdp</item>
+        <item name="android:layout_marginTop">@dimen/_4sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_4sdp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="WideDialog" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="DisplayEditTextStyle.Result">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/enter_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/exit_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/enter_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/exit_to_right</item>
+    </style>
+
+    <style name="styleTextRegular">
+        <item name="android:fontFamily">@font/pangram_regular</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="styleTextSemiMedium">
+        <item name="android:fontFamily">@font/pangram_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="styleTextBold">
+        <item name="android:fontFamily">@font/pangram_bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="styleTextPangram">
+        <item name="android:fontFamily">@font/pangram_extrabold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="DisplayEditTextStyle">
+        <item name="android:gravity">
+            top|left|right|center_vertical|center_horizontal|fill_horizontal|center
+        </item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <style name="WideDialogSecondExit" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="windowFixedHeightMajor">100%</item>
+        <item name="windowFixedHeightMinor">100%</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="DisplayEditTextStyle.Formula">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textSize">72sp</item>
+        <!--        <item name="maxTextSize">@dimen/qb_px_64</item>-->
+        <!--        <item name="minTextSize">@dimen/qb_px_36</item>-->
+        <!--        <item name="stepTextSize">@dimen/qb_px_8</item>-->
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gray_color</item>
+        <item name="colorControlActivated">@color/rate</item>
+    </style>
+
+
+    <style name="AdAttribution">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:text">Ad</item>
+        <item name="android:paddingLeft">3sp</item>
+        <item name="android:paddingRight">3sp</item>
+        <item name="android:paddingTop">1sp</item>
+        <item name="android:paddingBottom">1sp</item>
+        <item name="android:background">#FFCC66</item>
+    </style>
+
+    <style name="Theme.ValultCalculator.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ValultCalculator.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ValultCalculator.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

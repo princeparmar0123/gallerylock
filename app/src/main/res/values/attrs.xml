@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CurvedBottomNavigationView">
+        <attr name="cbn_selectedColor" format="color" />
+        <attr name="cbn_unSelectedColor" format="color" />
+        <attr name="cbn_animDuration" format="integer" />
+        <attr name="cbn_fabElevation" format="dimension" />
+        <attr name="cbn_elevation" format="dimension"/>
+        <attr name="cbn_fabBg" format="color" />
+        <attr name="cbn_bg" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color"/>
+        <attr name="fab_colorDisabled" format="color"/>
+        <attr name="fab_colorNormal" format="color"/>
+        <attr name="fab_icon" format="reference"/>
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_title" format="string"/>
+        <attr name="fab_stroke_visible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="AddFloatingActionButton">
+        <attr name="fab_plusIconColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="fab_addButtonColorPressed" format="color"/>
+        <attr name="fab_addButtonColorNormal" format="color"/>
+        <attr name="fab_addButtonSize" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_addButtonPlusIconColor" format="color"/>
+        <attr name="fab_addButtonStrokeVisible" format="boolean"/>
+        <attr name="fab_labelStyle" format="reference"/>
+        <attr name="fab_labelsPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="fab_expandDirection" format="enum">
+            <enum name="up" value="0"/>
+            <enum name="down" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+    </declare-styleable>
+
+
+    <attr name="roundSelector" format="reference" />
+    <attr name="rectSelector" format="reference" />
+    <attr name="defaultFooterColor" format="color" />
+    <attr name="toolbarPopupTheme" format="reference" />
+    <attr name="lineHeightHint" format="dimension" />
+
+    <declare-styleable name="NetworkImageView">
+        <attr name="url_link" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomTextView">
+        <attr name="fontName" format="string" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditTextView">
+        <attr name="fontNameEdit" format="string" />
+        <attr name="textsize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomButton">
+        <attr name="fontName" />
+        <attr name="textSize" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseRatingBar">
+        <attr name="srb_numStars" format="integer" />
+        <attr name="srb_minimumStars" format="float" />
+        <attr name="srb_rating" format="float" />
+        <attr name="srb_starPadding" format="dimension" />
+        <attr name="srb_drawableEmpty" format="reference" />
+        <attr name="srb_drawableFilled" format="reference" />
+        <attr name="srb_isIndicator" format="boolean" />
+        <attr name="srb_scrollable" format="boolean" />
+        <attr name="srb_clickable" format="boolean" />
+        <attr name="srb_clearRatingEnabled" format="boolean" />
+        <attr name="srb_starWidth" format="dimension" />
+        <attr name="srb_starHeight" format="dimension" />
+        <attr name="srb_stepSize" format="float" />
+    </declare-styleable>
+
+</resources>

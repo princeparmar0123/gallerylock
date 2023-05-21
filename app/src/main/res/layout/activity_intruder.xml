@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="@drawable/icn_back1" />
+
+        <RelativeLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/adContainer">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/intruder_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingLeft="@dimen/_1sdp"
+                android:paddingTop="@dimen/_1sdp"
+                android:paddingRight="@dimen/_1sdp"
+                android:paddingBottom="@dimen/_80sdp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/no_intruder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                android:layout_marginLeft="@dimen/_37sdp"
+                android:layout_marginRight="@dimen/_37sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nofound" />
+            </LinearLayout>
+
+            <com.calculator.vault.lock.hide.photo.video.floatingbutton.FloatingActionButton
+                android:id="@+id/floating_btn_intruder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_20sdp"
+                android:visibility="gone"
+                app:fabSize="normal"
+                app:fab_colorNormal="@color/colorAccent"
+                app:fab_colorPressed="@color/colorAccent"
+                app:fab_icon="@drawable/iv_delete" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/adContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/permissionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/permissionBtn"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="Please allow access of below permission to use this feature"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/permissionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adContainer"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_90sdp"
+            android:background="@drawable/allow_back"
+            android:text="Access Pictures"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

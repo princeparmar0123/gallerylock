@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/White"
+        app:cardCornerRadius="@dimen/_17sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:id="@+id/lout_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/rate"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/descriptionOfRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:maxLines="2"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="@string/thanks"
+                        android:textColor="@color/gray_rate"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lout_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_rates" />
+
+                    <TextView
+                        android:id="@+id/txt_title_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="Do you like  Our App"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="@dimen/_18sdp"
+                        android:fontFamily="@font/gotham_bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:text="Give us a quick rating so we know \nif you like it ?"
+                        android:textColor="@color/gray_rate"
+                        android:textSize="@dimen/_11sdp"
+                        android:fontFamily="@font/gotham_semi_bold"/>
+
+                    <com.calculator.vault.lock.hide.photo.video.rating.RotationRatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_18sdp"
+                        app:srb_starHeight="@dimen/_28sdp"
+                        app:srb_starPadding="@dimen/_4sdp"
+                        app:srb_starWidth="@dimen/_28sdp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_11sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/closeDialog"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/allow_back"
+                    android:text="@string/cancel"
+                    android:alpha="0.5"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_16sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rate_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/allow_back"
+                    android:backgroundTint="@color/color_main"
+                    android:text="Rate us"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_16sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

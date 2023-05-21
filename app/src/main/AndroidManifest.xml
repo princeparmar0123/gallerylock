@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.calculator.vault.lock.hide.photo.video">
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ValultCalculator"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/Theme.ValultCalculator.NoActionBar" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <data
+                    android:host="calcVault.com"
+                    android:scheme="http" />
+                <data
+                    android:host="calcVault.com"
+                    android:scheme="https" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.home.HomeActivity" />
+        <activity android:name=".ui.recoveryQuestion.RecoveryQuestionActivity" />
+        <activity android:name=".ui.settings.SettingsActivity" />
+        <activity android:name=".ui.photos.PhotosActivity" />
+        <activity android:name=".ui.video.VideoFolderActivity" />
+        <activity android:name=".ui.photos.ImageShowActivity" />
+        <activity android:name=".ui.note.SecretNoteActivity" />
+        <activity android:name=".ui.note.addnote.AddNoteActivity" />
+        <activity android:name=".ui.contact.ContactActivity" />
+        <activity android:name=".ui.contact.AddContactActivity" />
+        <activity android:name=".ui.passwords.PasswordsActivity" />
+        <activity android:name=".ui.recyclebin.RecycleBinActivity" />
+        <activity android:name=".ui.intruderSelfie.IntruderSelfieActivity" />
+        <activity android:name=".ui.passwords.debitcard.CardActivity" />
+        <activity android:name=".ui.passwords.debitcard.AddCardActivity" />
+        <activity android:name=".ui.passwords.bank.AddBankActivity" />
+        <activity android:name=".ui.passwords.bank.BankActivity" />
+        <activity android:name=".ui.passwords.bank.BankdetailActivity" />
+        <activity android:name=".ui.passwords.social.SocialActivity" />
+        <activity android:name=".ui.passwords.social.AddSocialActivity" />
+        <activity android:name=".ui.passwords.email.AddEmailActivity" />
+        <activity android:name=".ui.passwords.email.EmailActivity" />
+        <activity android:name=".ui.video.VideoShowActivity" />
+        <activity android:name=".ui.cloud.CloudActivity" />
+        <activity android:name=".ui.cloud.BackupActivity" />
+        <activity android:name=".ui.cloud.DrivefolderActivity" />
+        <activity android:name=".ui.recyclebin.RecyclebinShowActivity" />
+        <activity android:name=".ui.settings.PrivacyActivity" />
+        <activity android:name=".ui.settings.HideappActivity" />
+        <activity android:name=".ui.settings.AboutusActivity" />
+        <activity android:name=".ui.photos.FolderPhotoActivity" />
+        <activity android:name=".ui.intruderSelfie.Intruder_Activity" />
+        <activity android:name=".ui.recyclebin.Recyclebin_Activity" />
+        <activity android:name=".ui.photos.Folder_Photo_Activity" />
+        <activity android:name=".ui.video.Videos_Activity" />
+
+        <service android:name=".service.CamerSelfiService" />
+        <service android:name=".service.BackgroundService" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_unit_id" />
+    </application>
+
+</manifest>
