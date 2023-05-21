@@ -16,8 +16,7 @@ class DummyClass {
             HomeTask(R.drawable.contact_2x,"Contact"),
             HomeTask(R.drawable.recycle_bin_2x,"Recycle Bin"),
             HomeTask(R.drawable.password_new_2x,"Password"),
-            HomeTask(R.drawable.msg_2x,"Message"),
-            HomeTask(R.drawable.doc_2x,"Documents"),
+//            HomeTask(R.drawable.doc_2x,"Documents"),
 
           )
 

@@ -2,6 +2,7 @@ package com.calculator.vault.lock.hide.photo.video
 
 import android.Manifest
 import android.app.Dialog
+import android.content.ActivityNotFoundException
 import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -17,6 +18,7 @@ import android.view.*
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
@@ -48,9 +50,11 @@ import com.calculator.vault.lock.hide.photo.video.ui.note.SecretNoteActivity
 import com.calculator.vault.lock.hide.photo.video.ui.passwords.PasswordsActivity
 import com.calculator.vault.lock.hide.photo.video.ui.photos.PhotosActivity
 import com.calculator.vault.lock.hide.photo.video.ui.recyclebin.Recyclebin_Activity
+import com.calculator.vault.lock.hide.photo.video.ui.settings.PrivacyActivity
 import com.calculator.vault.lock.hide.photo.video.ui.settings.SettingsActivity
 import com.calculator.vault.lock.hide.photo.video.ui.video.Videos_Activity
 import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.toast
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
@@ -97,6 +101,7 @@ class DrawerActivity : BaseActivity<ActivityDrawerBinding>(R.layout.activity_dra
 
         setSupportActionBar(binding.appBarDrawer.toolbar)
 
+        binding.navView.setNavigationItemSelectedListener(this)
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         // Passing each menu ID as a set of Ids because each
@@ -108,6 +113,15 @@ class DrawerActivity : BaseActivity<ActivityDrawerBinding>(R.layout.activity_dra
         toggle.syncState()
         navView.setNavigationItemSelectedListener(this)
 
+        getSupportActionBar()!!.setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar()!!.setDisplayShowHomeEnabled(true);
+        getSupportActionBar()!!.setHomeButtonEnabled(true);
+        getSupportActionBar()!!.setHomeAsUpIndicator(R.drawable.drawer_icon);
+//        supportActionBar!!.setDisplayHomeAsUpEnabled(true);
+//        toggle.isDrawerIndicatorEnabled = true;
+//        toggle.setHomeAsUpIndicator(R.drawable.drawer_icon);
+
+        initDrawer()
         init()
         onClickListener()
         loadBanner()
@@ -115,6 +129,86 @@ class DrawerActivity : BaseActivity<ActivityDrawerBinding>(R.layout.activity_dra
 
     }
 
+    fun initDrawer(){
+        var headerView=binding.navView.getHeaderView(0)
+        var settingLayout:RelativeLayout = headerView.findViewById(R.id.rl_down)
+        var privacyPolicyLayout:RelativeLayout = headerView.findViewById(R.id.rl_policy)
+        var rateUsLayout:RelativeLayout = headerView.findViewById(R.id.rl_rate)
+        var shareLayout:RelativeLayout = headerView.findViewById(R.id.rl_share)
+        var moreapplicationLayout:RelativeLayout = headerView.findViewById(R.id.rl_more)
+        var contactUsLayout:RelativeLayout = headerView.findViewById(R.id.rl_contact)
+        var aboutUsLayout:RelativeLayout = headerView.findViewById(R.id.rl_about)
+
+        settingLayout.setOnClickListener {
+            var intent : Intent=Intent(this,SettingsActivity::class.java)
+            startActivity(intent)
+        }
+
+        privacyPolicyLayout.setOnClickListener {
+
+            val privacy_intent = Intent(this, PrivacyActivity::class.java)
+            startActivity(privacy_intent)
+        }
+        rateUsLayout.setOnClickListener {
+
+            val uri = Uri.parse("market://details?id=$packageName")
+            val goToMarket = Intent(Intent.ACTION_VIEW, uri)
+            goToMarket.addFlags(
+                Intent.FLAG_ACTIVITY_NO_HISTORY or
+                        Intent.FLAG_ACTIVITY_NEW_DOCUMENT or
+                        Intent.FLAG_ACTIVITY_MULTIPLE_TASK
+            )
+            try {
+                startActivity(goToMarket)
+            } catch (e: ActivityNotFoundException) {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("http://play.google.com/store/apps/details?id=$packageName")
+                    )
+                )
+            }
+        }
+        shareLayout.setOnClickListener {
+
+            val sendIntent = Intent()
+            sendIntent.action = Intent.ACTION_SEND
+            sendIntent.putExtra(
+                Intent.EXTRA_TEXT,
+                "Hey check out my app at: https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID
+            )
+            sendIntent.type = "text/plain"
+            startActivity(sendIntent)
+
+        }
+        moreapplicationLayout.setOnClickListener {
+
+            startActivity(
+                Intent(
+                    Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/developer?id=KD Inc.")
+                )
+            )
+        }
+        contactUsLayout.setOnClickListener {
+
+            try {
+                val intent = Intent(Intent.ACTION_SEND)
+                val recipients = arrayOf(resources.getString(R.string.email))
+                intent.putExtra(Intent.EXTRA_EMAIL, recipients)
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback")
+                intent.putExtra(Intent.EXTRA_CC, "mailcc@gmail.com")
+                intent.type = "text/html"
+                intent.setPackage("com.google.android.gm")
+                startActivity(Intent.createChooser(intent, "Send mail"))
+            } catch (e: Exception) {
+                Toast.makeText(this, "Not installed Gmail", Toast.LENGTH_SHORT).show()
+            }
+
+        }
+        aboutUsLayout.setOnClickListener {
+
+        }
+    }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.drawer, menu)
@@ -139,6 +233,9 @@ class DrawerActivity : BaseActivity<ActivityDrawerBinding>(R.layout.activity_dra
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
+            R.id.rl_down->{
+                Toast.makeText(this, "Clienkd..", Toast.LENGTH_SHORT).show()
+            }
 //            R.id.nav_images -> {
 //                launchMimetypeActivity(IMAGES)
 ////                Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show()
