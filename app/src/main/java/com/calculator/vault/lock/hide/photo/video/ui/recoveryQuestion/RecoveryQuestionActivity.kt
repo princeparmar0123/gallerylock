@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import com.calculator.vault.lock.hide.photo.video.DrawerActivity
 import com.calculator.vault.lock.hide.photo.video.R
 import com.calculator.vault.lock.hide.photo.video.common.base.BaseActivity
 import com.calculator.vault.lock.hide.photo.video.common.utils.Constant
@@ -71,7 +72,7 @@ class RecoveryQuestionActivity : BaseActivity<ActivityRecoveryQuestionBinding>(R
                         pref.question=true
                         pref.setQuestion = binding.spinnerQuestion.selectedItemPosition ?:0
                         pref.setAnswer = binding.questionAns.text.toString().trim{ it <= ' '}
-                        val intent = Intent(this, HomeActivity::class.java)
+                        val intent = Intent(this, DrawerActivity::class.java)
                         startActivity(intent)
                         finish()
                     } else {

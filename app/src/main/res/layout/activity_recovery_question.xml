@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
         android:background="@color/black"
@@ -148,8 +148,10 @@
                     android:layout_marginLeft="@dimen/_30sdp"
                     android:layout_marginTop="@dimen/_40sdp"
                     android:layout_marginRight="@dimen/_30sdp"
-                    android:background="@drawable/allow_back_black"
+                    app:background="@color/color_blue"
+                    android:backgroundTint="@color/color_blue"
                     android:text="Save"
+                    android:padding="@dimen/_10sdp"
                     android:textColor="@color/White" />
             </LinearLayout>
         </ScrollView>

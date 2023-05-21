@@ -19,6 +19,7 @@
             android:textColor="@color/White"
             android:gravity="center"
             android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/nav_header_title"
@@ -40,8 +41,8 @@
                 android:id="@+id/iv_down"
                 android:layout_alignParentLeft="true"
                 android:src="@drawable/download_i1"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"/>
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"/>
 
             <ImageView
                 android:layout_centerVertical="true"
@@ -54,7 +55,8 @@
                 android:paddingLeft="@dimen/_5sdp"
                 android:layout_toRightOf="@id/iv_down"
                 android:layout_centerVertical="true"
-                android:textSize="@dimen/_9sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
                 android:textColor="@color/White"
                 android:text="Setting"
                 android:layout_width="wrap_content"
@@ -62,6 +64,9 @@
 
         </RelativeLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
         <RelativeLayout
             android:id="@+id/rl_policy"
             android:paddingTop="@dimen/_10sdp"
@@ -71,22 +76,24 @@
             <ImageView
                 android:id="@+id/iv_policy"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/download_i1"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"/>
+                android:src="@drawable/drawer_lock"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"/>
 
             <ImageView
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
                 android:src="@drawable/icon_next"
                 android:layout_width="@dimen/_8sdp"
+
                 android:layout_height="@dimen/_15sdp"/>
 
             <TextView
                 android:paddingLeft="@dimen/_5sdp"
                 android:layout_toRightOf="@id/iv_policy"
-                android:layout_centerVertical="true"
-                android:textSize="@dimen/_9sdp"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
                 android:textColor="@color/White"
                 android:text="Privacy Policy"
                 android:layout_width="wrap_content"
@@ -94,6 +101,9 @@
 
         </RelativeLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
         <RelativeLayout
             android:id="@+id/rl_rate"
             android:paddingTop="@dimen/_10sdp"
@@ -103,9 +113,9 @@
             <ImageView
                 android:id="@+id/iv_rate"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/download_i1"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"/>
+                android:src="@drawable/drawer_rate"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"/>
 
             <ImageView
                 android:layout_centerVertical="true"
@@ -117,8 +127,9 @@
             <TextView
                 android:paddingLeft="@dimen/_5sdp"
                 android:layout_toRightOf="@id/iv_rate"
-                android:layout_centerVertical="true"
-                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
                 android:textColor="@color/White"
                 android:text="Rate Us"
                 android:layout_width="wrap_content"
@@ -126,18 +137,23 @@
 
         </RelativeLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+
         <RelativeLayout
             android:id="@+id/rl_share"
             android:paddingTop="@dimen/_10sdp"
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/iv_share"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/download_i1"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"/>
+                android:src="@drawable/drawer_share"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"/>
 
             <ImageView
                 android:layout_centerVertical="true"
@@ -147,16 +163,21 @@
                 android:layout_height="@dimen/_15sdp"/>
 
             <TextView
-                android:paddingLeft="@dimen/_5sdp"
-                android:layout_toRightOf="@id/iv_share"
-                android:layout_centerVertical="true"
-                android:textSize="@dimen/_9sdp"
-                android:textColor="@color/White"
-                android:text="Share"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@id/iv_share"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Share"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
 
         <RelativeLayout
             android:id="@+id/rl_more"
@@ -167,9 +188,9 @@
             <ImageView
                 android:id="@+id/iv_more"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/download_i1"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"/>
+                android:src="@drawable/drawer_application"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"/>
 
             <ImageView
                 android:layout_centerVertical="true"
@@ -181,14 +202,19 @@
             <TextView
                 android:paddingLeft="@dimen/_5sdp"
                 android:layout_toRightOf="@id/iv_more"
-                android:layout_centerVertical="true"
-                android:textSize="@dimen/_9sdp"
+                android:textSize="@dimen/_13sdp"
                 android:textColor="@color/White"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:text="More Apps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
 
         <RelativeLayout
             android:id="@+id/rl_contact"
@@ -199,9 +225,9 @@
             <ImageView
                 android:id="@+id/iv_contact"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/download_i1"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"/>
+                android:src="@drawable/drawer_call"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"/>
 
             <ImageView
                 android:layout_centerVertical="true"
@@ -213,15 +239,20 @@
             <TextView
                 android:paddingLeft="@dimen/_5sdp"
                 android:layout_toRightOf="@id/iv_contact"
-                android:layout_centerVertical="true"
-                android:textSize="@dimen/_9sdp"
+                android:textSize="@dimen/_13sdp"
                 android:textColor="@color/White"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:text="Contact Us"
+                android:textStyle="bold"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         </RelativeLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
         <RelativeLayout
             android:id="@+id/rl_about"
             android:paddingTop="@dimen/_10sdp"
@@ -231,9 +262,9 @@
             <ImageView
                 android:id="@+id/iv_about"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/download_i1"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"/>
+                android:src="@drawable/drawer_info"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"/>
 
             <ImageView
                 android:layout_centerVertical="true"
@@ -245,11 +276,12 @@
             <TextView
                 android:paddingLeft="@dimen/_5sdp"
                 android:layout_toRightOf="@id/iv_about"
-                android:layout_centerVertical="true"
-                android:textSize="@dimen/_9sdp"
+                android:textSize="@dimen/_13sdp"
                 android:textColor="@color/White"
                 android:text="About Us"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_width="wrap_content"
+                android:textStyle="bold"
                 android:layout_height="wrap_content"/>
 
         </RelativeLayout>
