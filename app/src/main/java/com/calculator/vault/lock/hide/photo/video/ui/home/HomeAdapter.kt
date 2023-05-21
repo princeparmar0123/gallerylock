@@ -108,6 +108,8 @@ class HomeAdapter(var activity: Activity) :
                         requestPermission(0)
                     }
 
+
+
                     2 -> if (checkPermission()) {
                         camera_per =
                             ContextCompat.checkSelfPermission(activity, Manifest.permission.CAMERA)
@@ -125,56 +127,39 @@ class HomeAdapter(var activity: Activity) :
                         requestPermission(6)
                     }
 
-                    3 -> if (checkPermission()) {
-                        camera_per =
-                            ContextCompat.checkSelfPermission(activity, Manifest.permission.CAMERA)
-                        if (camera_per != PackageManager.PERMISSION_GRANTED) {
-                            ActivityCompat.requestPermissions(
-                                activity,
-                                arrayOf(Manifest.permission.CAMERA),
-                                1111
-                            )
-                        } else {
-                            val intent6 = Intent(activity, Intruder_Activity::class.java)
-                            activity.startActivity(intent6)
-                        }
-                    } else {
-                        requestPermission(6)
-                    }
-
-                    7 -> {
+                    6 -> {
                         val intent8 = Intent(activity, PasswordsActivity::class.java)
                         activity.startActivity(intent8)
                     }
-                    4 -> {
+                    3 -> {
                         val intent4 = Intent(activity, SecretNoteActivity::class.java)
                         activity.startActivity(intent4)
                     }
-                    5 -> {
+                    4 -> {
                         val intent5 = Intent(activity, ContactActivity::class.java)
                         activity.startActivity(intent5)
                     }
 
-                    6 -> if (checkPermission()) {
+                    5 -> if (checkPermission()) {
                         val intent7 = Intent(activity, Recyclebin_Activity::class.java)
                         activity.startActivity(intent7)
                     } else {
                         requestPermission(7)
                     }
 
-                    7 -> if (checkPermission()) {
-                        val intent7 = Intent(activity, Recyclebin_Activity::class.java)
-                        activity.startActivity(intent7)
-                    } else {
-                        requestPermission(7)
-                    }
-
-                    8 -> if (checkPermission()) {
-                        val intent7 = Intent(activity, Recyclebin_Activity::class.java)
-                        activity.startActivity(intent7)
-                    } else {
-                        requestPermission(7)
-                    }
+//                    7 -> if (checkPermission()) {
+//                        val intent7 = Intent(activity, Recyclebin_Activity::class.java)
+//                        activity.startActivity(intent7)
+//                    } else {
+//                        requestPermission(7)
+//                    }
+//
+//                    8 -> if (checkPermission()) {
+//                        val intent7 = Intent(activity, Recyclebin_Activity::class.java)
+//                        activity.startActivity(intent7)
+//                    } else {
+//                        requestPermission(7)
+//                    }
                 }
             }
         }

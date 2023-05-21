@@ -61,8 +61,8 @@
                 android:layout_marginBottom="@dimen/_20sdp"
                 app:fab_icon="@drawable/ic_plus_24dp"
                 app:fab_size="normal"
-                fab:fab_colorNormal="@color/colorAccent"
-                fab:fab_colorPressed="@color/colorAccent" />
+                fab:fab_colorNormal="@color/color_blue"
+                fab:fab_colorPressed="@color/color_blue" />
 
             <com.calculator.vault.lock.hide.photo.video.floatingbutton.FloatingActionButton
                 android:id="@+id/floating_del_contact"

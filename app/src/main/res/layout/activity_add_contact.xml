@@ -45,7 +45,7 @@
             android:paddingRight="@dimen/_16sdp"
             android:paddingBottom="@dimen/_10sdp"
             android:singleLine="true"
-            android:textColor="@color/black"
+            android:textColor="@color/White"
             android:textColorHint="@color/gray"
             android:textCursorDrawable="@null"
             android:textSize="@dimen/_13sdp" />
@@ -78,7 +78,7 @@
             android:paddingRight="@dimen/_16sdp"
             android:paddingBottom="@dimen/_10sdp"
             android:singleLine="true"
-            android:textColor="@color/black"
+            android:textColor="@color/White"
             android:textColorHint="@color/gray"
             android:textCursorDrawable="@null"
             android:textSize="@dimen/_13sdp" />
