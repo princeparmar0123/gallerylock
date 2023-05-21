@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/_5sdp"
-    app:cardBackgroundColor="@color/color_background_layout"
+    app:cardBackgroundColor="@color/color_blue"
     app:cardCornerRadius="@dimen/_6sdp"
     app:cardElevation="@dimen/_6sdp">
 
@@ -23,7 +23,7 @@
             android:layout_margin="@dimen/_10sdp"
             android:padding="@dimen/_4sdp"
             android:src="@drawable/iv_bank"
-            app:tint="@color/colorBlack" />
+            app:tint="@color/White" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Bank Name"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/White"
                 android:textSize="@dimen/_14sdp" />
 
             <TextView
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
                 android:text="Account number"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/White"
                 android:textSize="@dimen/_12sdp" />
         </LinearLayout>
 
@@ -59,6 +59,6 @@
             android:layout_gravity="center_vertical"
             android:padding="@dimen/_4sdp"
             android:src="@drawable/iv_option"
-            app:tint="@color/colorBlack" />
+            app:tint="@color/White" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

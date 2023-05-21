@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/White">
+    android:background="@color/black">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -35,9 +35,11 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="@dimen/_180sdp"
-            android:layout_height="@dimen/_180sdp"
-            android:src="@drawable/iv_nodata" />
+            android:layout_marginLeft="@dimen/_37sdp"
+            android:layout_marginRight="@dimen/_37sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nofound" />
     </LinearLayout>
 
     <com.calculator.vault.lock.hide.photo.video.floatingbutton.FloatingActionButton
@@ -49,6 +51,5 @@
         android:layout_margin="@dimen/_20sdp"
         app:fabSize="normal"
         app:fab_icon="@drawable/ic_plus_24dp"
-        fab:fab_colorNormal="@color/colorAccent"
-        fab:fab_colorPressed="@color/colorAccent" />
+        android:background="@drawable/circle_shape_blue"  />
 </RelativeLayout>

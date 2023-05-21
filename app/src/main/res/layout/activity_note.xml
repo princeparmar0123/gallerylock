@@ -78,8 +78,8 @@
                 android:visibility="gone"
                 app:fabSize="normal"
                 app:fab_icon="@drawable/iv_delete"
-                fab:fab_colorNormal="@color/colorAccent"
-                fab:fab_colorPressed="@color/colorAccent" />
+                fab:fab_colorNormal="@color/color_blue"
+                fab:fab_colorPressed="@color/color_blue" />
         </RelativeLayout>
 
         <FrameLayout

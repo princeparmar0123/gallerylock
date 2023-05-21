@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/White">
+    android:background="@color/black">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -37,7 +37,7 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:text="Select Social Type"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="@color/White"
                     android:textSize="@dimen/_12sdp" />
 
                 <LinearLayout
@@ -47,7 +47,7 @@
                     android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:background="@drawable/edit_text"
-                    android:backgroundTint="@color/color_background_layout"
+                    android:backgroundTint="@color/color_black"
                     android:padding="@dimen/_10sdp">
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -92,14 +92,14 @@
                     android:background="@drawable/edit_text"
                     android:gravity="center_vertical"
                     android:hint="Enter name"
-                    android:backgroundTint="@color/color_background_layout"
+                    android:backgroundTint="@color/color_black"
                     android:paddingLeft="@dimen/_16sdp"
                     android:paddingTop="@dimen/_10sdp"
                     android:paddingRight="@dimen/_16sdp"
                     android:paddingBottom="@dimen/_10sdp"
                     android:singleLine="true"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/gray"
                     android:textCursorDrawable="@null"
                     android:textSize="@dimen/_13sdp" />
 
@@ -112,7 +112,7 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:background="@drawable/edit_text"
-                    android:backgroundTint="@color/color_background_layout"
+                    android:backgroundTint="@color/color_black"
                     android:gravity="center_vertical"
                     android:hint="Enter email/userid"
                     android:paddingLeft="@dimen/_16sdp"
@@ -120,8 +120,8 @@
                     android:paddingRight="@dimen/_16sdp"
                     android:paddingBottom="@dimen/_10sdp"
                     android:singleLine="true"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/gray"
                     android:textCursorDrawable="@null"
                     android:textSize="@dimen/_13sdp" />
 
@@ -134,7 +134,7 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:background="@drawable/edit_text"
-                    android:backgroundTint="@color/color_background_layout"
+                    android:backgroundTint="@color/color_black"
                     android:gravity="center_vertical"
                     android:hint="Enter password"
                     android:inputType="text"
@@ -143,12 +143,12 @@
                     android:paddingRight="@dimen/_16sdp"
                     android:paddingBottom="@dimen/_10sdp"
                     android:singleLine="true"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/gray"
                     android:textCursorDrawable="@null"
                     android:textSize="@dimen/_13sdp" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/social_save"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

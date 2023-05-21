@@ -130,16 +130,11 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(R.layout.activity_home),
         adapter?.setItemClickListener { view, position, s ->
             when (position) {
                 0 -> {
-                    // AdmobAdManager.getInstance(this).loadInterstitialAd(this, PreferencesManager.getInterstitialId(this), 0) {
                     startActivity<Videos_Activity>()
-                    //  }
                 }
                 1 -> {
                     startActivity<PhotosActivity>()
                 }
-//                2 -> {
-//
-//                }
                 2 -> {
                     startActivity<SecretNoteActivity>()
                 }

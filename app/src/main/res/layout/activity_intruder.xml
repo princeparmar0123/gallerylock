@@ -8,7 +8,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorWhite">
+        android:background="@color/black">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -60,8 +60,8 @@
                 android:layout_margin="@dimen/_20sdp"
                 android:visibility="gone"
                 app:fabSize="normal"
-                app:fab_colorNormal="@color/colorAccent"
-                app:fab_colorPressed="@color/colorAccent"
+                app:fab_colorNormal="@color/color_blue"
+                app:fab_colorPressed="@color/color_blue"
                 app:fab_icon="@drawable/iv_delete" />
         </RelativeLayout>
 
