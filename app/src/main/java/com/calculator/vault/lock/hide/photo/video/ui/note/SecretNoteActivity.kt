@@ -33,6 +33,7 @@ class SecretNoteActivity : BaseActivity<ActivityNoteBinding>(R.layout.activity_n
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding.noteToolbar.title = "Secret Note"
+
         binding.noteToolbar.setTitleTextColor(Color.WHITE)
         setSupportActionBar(binding.noteToolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

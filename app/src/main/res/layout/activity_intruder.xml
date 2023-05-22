@@ -10,7 +10,8 @@
         android:layout_height="match_parent"
         android:background="@color/black">
 
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
+            app:titleCentered="true"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"

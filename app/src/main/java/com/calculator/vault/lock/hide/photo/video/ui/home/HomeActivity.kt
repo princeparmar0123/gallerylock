@@ -150,6 +150,9 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(R.layout.activity_home),
                 6 -> {
                     startActivity<PasswordsActivity>()
                 }
+                7 -> {
+                    startActivity<CloudActivity>()
+                }
             }
         }
     }

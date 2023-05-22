@@ -4,11 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@color/colorWhite"
+    android:background="@color/black"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
+    <com.google.android.material.appbar.MaterialToolbar
+        app:titleCentered="true"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -58,14 +59,14 @@
                     android:layout_height="@dimen/_6sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:src="@drawable/iv_dot"
-                    app:tint="@color/black" />
+                    app:tint="@color/White" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:text="@string/drive1"
-                    android:textColor="@color/black"
+                    android:textColor="@color/White"
                     android:textSize="@dimen/_12sdp" />
 
             </LinearLayout>
@@ -83,21 +84,21 @@
                     android:layout_height="@dimen/_6sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:src="@drawable/iv_dot"
-                    app:tint="@color/black" />
+                    app:tint="@color/White" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:text="@string/drive2"
-                    android:textColor="@color/black"
+                    android:textColor="@color/White"
                     android:textSize="@dimen/_12sdp" />
 
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/link_drive"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,7 +106,8 @@
         android:layout_marginLeft="@dimen/_30sdp"
         android:layout_marginRight="@dimen/_30sdp"
         android:layout_marginBottom="@dimen/_60sdp"
-        android:background="@drawable/allow_back"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/color_blue"
         android:textAllCaps="true"
         android:text="Link Google Drive"
         android:textColor="@color/White" />

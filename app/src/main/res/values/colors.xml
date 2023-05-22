@@ -13,7 +13,7 @@
     <color name="color_background_layout">#F0F4FF</color>
     <color name="color_gray">#A5A5A5</color>
     <color name="color_black">#333333</color>
-    <color name="color_blue">#008DDC</color>
+        <color name="color_blue">#008DDC</color>
     <color name="color_main">#000000</color>
     <color name="colorAccentTwo">#000000</color>
     <color name="colorAccentThree">#000000</color>

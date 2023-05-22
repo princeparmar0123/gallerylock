@@ -109,7 +109,7 @@
                     android:id="@+id/rvFiles"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
                     android:clipToPadding="false"
                     android:overScrollMode="never"
                     android:scrollbars="none"

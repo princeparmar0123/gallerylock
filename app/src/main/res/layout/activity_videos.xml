@@ -10,7 +10,8 @@
         android:background="@color/black">
 
 
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
+            app:titleCentered="true"
             android:textAlignment="center"
             android:textSize="@dimen/_10sdp"
             android:gravity="center_horizontal"

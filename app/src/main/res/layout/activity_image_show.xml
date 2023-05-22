@@ -14,7 +14,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
+            app:titleCentered="true"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -50,7 +51,7 @@
                      android:src="@drawable/iv_save"
                      android:tint="@color/White" />
              </LinearLayout>-->
-        </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.MaterialToolbar>
     </RelativeLayout>
 
 </layout>

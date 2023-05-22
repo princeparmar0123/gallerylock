@@ -17,6 +17,7 @@ import com.calculator.vault.lock.hide.photo.video.common.data.database.Database
 import com.calculator.vault.lock.hide.photo.video.common.data.prefs.PreferencesManager
 import com.calculator.vault.lock.hide.photo.video.common.utils.HomeTask
 import com.calculator.vault.lock.hide.photo.video.databinding.LayoutItemHomeBinding
+import com.calculator.vault.lock.hide.photo.video.ui.cloud.CloudActivity
 import com.calculator.vault.lock.hide.photo.video.ui.contact.ContactActivity
 import com.calculator.vault.lock.hide.photo.video.ui.intruderSelfie.Intruder_Activity
 import com.calculator.vault.lock.hide.photo.video.ui.note.SecretNoteActivity
@@ -145,6 +146,13 @@ class HomeAdapter(var activity: Activity) :
                         activity.startActivity(intent7)
                     } else {
                         requestPermission(7)
+                    }
+
+                    7 -> if (checkPermission()) {
+                        val intent7 = Intent(activity, CloudActivity::class.java)
+                        activity.startActivity(intent7)
+                    } else {
+                        requestPermission(17)
                     }
 
 //                    7 -> if (checkPermission()) {

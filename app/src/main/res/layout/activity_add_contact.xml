@@ -11,7 +11,8 @@
         android:background="@color/black"
         android:orientation="vertical">
 
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
+            app:titleCentered="true"
             android:id="@+id/contact_add_toolbar"
             android:layout_width="match_parent"
             app:navigationIcon="@drawable/icn_back1"
